@@ -1,0 +1,34 @@
+<ul>
+	{{ navigation:links group="sidebar" }}
+</ul>
+
+{{ if user:logged_in }}
+	
+	<h2>{{ user:first_name }} {{ user:last_name }}</h2>
+	<ul>
+		<li><a href="{{ url:site }}admin">{{ helper:lang line="global:control-panel" }}</a></li>
+		{{ if settings:enable_profiles }}<li><a href="{{ url:site }}edit-profile">{{ helper:lang line="edit_profile_label" }}</a></li>{{ endif }}
+		<li><a href="{{ url:site }}users/logout">{{ helper:lang line="logout_label" }}</a></li>
+	</ul>
+							
+{{ else }}
+	
+	<form action="{{ url:site }}users/login" method="post" accept-charset="utf-8">
+		<div>
+			<label for="email">{{ helper:lang line="user_email" }}</label>
+			<input type="text" id="email" name="email" maxlength="120" />
+		</div>
+		<div>
+			<label for="password">{{ helper:lang line="user_password" }}</label>
+			<input type="password" id="password" name="password" maxlength="20" />
+		</div>
+		<div>
+			<input type="submit" value="{{ helper:lang line='user_login_btn' }}" name="btnLogin" /> or 
+			<a href="{{ url:site }}register">{{ helper:lang line="user_register_btn" }}</a>
+		</div>
+		<div>
+			<label><input type="checkbox" name="remember" value="1" /> {{ helper:lang line="user_remember" }}</label>
+		</div>
+	</form>
+
+{{ endif }}

@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>{{ template:title }} | {{ settings:site_name }}</title>
+{{ theme:css file="normalize.css" }}
+{{ theme:css file="layout.css" }}
+{{ template:metadata }}
+{{ integration:analytics }}
+</head>
+<body class="{{ url:segments segment="1" default="home" }}">

@@ -1,0 +1,24 @@
+{{ theme:partial name="header" }}
+{{ theme:partial name="nav" }}
+
+<div class="row content" id="content">
+
+	<div class="center clearfix">
+		
+		<div class="col-a">
+
+			{{ template:body }}
+
+		</div> <!-- /.col-a -->
+
+		<div class="col-b" id="sidebar">
+			
+			{{ theme:partial name="sidebar" }}
+			
+		</div> <!-- /.col-b -->
+
+	</div> <!-- /.center -->
+
+</div> <!-- .content -->
+
+{{ theme:partial name="footer" }}

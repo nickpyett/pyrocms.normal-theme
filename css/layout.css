@@ -1,0 +1,169 @@
+	/* CLEARFIX */
+
+
+.clearfix:before, .clearfix:after { content: "\0020"; display: block; height: 0; visibility: hidden; } 
+.clearfix:after { clear: both; }
+.clearfix { zoom: 1; }
+
+
+	/* STRUCTURE */
+
+	
+.row
+{
+	width: 100%;
+	padding: 20px 0;
+	text-align: center;
+}
+
+.center
+{
+	width: 980px;
+	margin: 0 auto;
+	text-align: left;
+}
+
+@media screen and (max-width: 1020px) {
+	
+	.center
+	{
+		width: 96%;
+	}
+}
+
+.col-a
+{
+	float: left;
+	width: 48%;
+	margin-right: 4%;
+}
+
+.col-b
+{
+	float: left;
+	width: 48%;
+}
+
+@media screen and (max-width: 520px) {
+	
+	.col-a,
+	.col-b
+	{
+		float: none;
+	}
+}
+
+
+	/* SECTIONING */
+
+
+.header
+{
+	
+}
+
+.content .col-a
+{
+	width: 71%;
+	margin-right: 4%;
+}
+
+.content .col-b
+{
+	width: 25%;
+}
+
+.footer .col-b
+{
+	text-align: right;
+}
+
+@media screen and (max-width: 520px) {
+	
+	.footer .col-b
+	{
+		text-align: left;
+	}
+}
+
+	/* NAVIGATION */
+
+
+nav ul
+{
+	padding-left: 0;
+}
+
+.nav-main
+{
+	float: right;
+}
+
+@media screen and (max-width: 520px) {
+	
+	.nav-main
+	{
+		float: none;
+	}
+}
+
+.nav-main li
+{
+	float: left;
+	position: relative;
+	line-height: 1.8em;
+}
+
+.nav-main li:hover ul
+{
+	display: block;
+}
+
+.nav-main li:hover ul li ul
+{
+	display: none;
+}
+
+.nav-main a
+{
+	display: block;
+	padding: 0 6px;
+	background-color: #eee;
+}
+
+.nav-main li ul
+{
+	position: absolute;
+	top: 100%;
+	margin: 0;
+	display: none;
+}
+
+.nav-main li ul li
+{
+	padding-left: 0;
+}
+
+.nav-main li ul li a
+{
+	background-color: #ddd;
+}
+
+.nav-main li ul li ul
+{
+	position: absolute;
+	left: 100%;
+	top: 0;
+	z-index: 10;
+}
+
+.nav-main li ul li:hover ul
+{
+	display: block;
+}
+
+.nav-main li ul li ul li a
+{
+	background-color: #ccc;
+}
+	
