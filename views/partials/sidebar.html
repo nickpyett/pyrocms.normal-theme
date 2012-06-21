@@ -1,15 +1,19 @@
-<ul>
+<nav>
+<ul class="nav-sidebar">
 	{{ navigation:links group="sidebar" }}
 </ul>
+</nav>
 
 {{ if user:logged_in }}
 	
 	<h2>{{ user:first_name }} {{ user:last_name }}</h2>
-	<ul>
+	<nav>
+	<ul class="nav-user-options">
 		<li><a href="{{ url:site }}admin">{{ helper:lang line="global:control-panel" }}</a></li>
-		{{ if settings:enable_profiles }}<li><a href="{{ url:site }}edit-profile">{{ helper:lang line="edit_profile_label" }}</a></li>{{ endif }}
+		{{ if settings:enable_profiles }}<li><a href="{{ url:site }}users/edit">{{ helper:lang line="edit_profile_label" }}</a></li>{{ endif }}
 		<li><a href="{{ url:site }}users/logout">{{ helper:lang line="logout_label" }}</a></li>
 	</ul>
+	</nav>
 							
 {{ else }}
 	
