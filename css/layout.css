@@ -14,7 +14,6 @@
 	width: 100%;
 	padding: 16px 0;
 	text-align: center;
-	margin-left: -4%;
 }
 
 .center
@@ -22,6 +21,11 @@
 	width: 980px;
 	margin: 0 auto;
 	text-align: left;
+}
+
+.span-wrap
+{
+	margin-left: -4%;
 }
 
 @media screen and (max-width: 1020px) {
@@ -47,12 +51,18 @@
 	float: left;
 }
 
-@media screen and (max-width: 520px) {
+@media screen and (max-width: 650px) {
+	
+	.span-wrap
+	{
+		margin-left: 0;
+	}
 	
 	.span12, .span10, .span8, .span6, .span4, .span3, .span2, .span1
 	{
 		width: 96%;
 		float: none;
+		margin-left: 0;
 	}
 }
 
