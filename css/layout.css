@@ -36,16 +36,18 @@
 	}
 }
 
-.span12 { width: 96%;}
+.span12 { width: 96%; }
 .span10 { width: 79.3%; }
 .span8 { width: 62.6%; }
+.span7 { width: 54.3%; }
 .span6 { width: 46%; }
+.span5 { width: 37.6%; }
 .span4 { width: 29.3%; }
 .span3 { width: 21%; }
 .span2 { width: 12.6%; }
 .span1 { width: 4.3%; }
 
-.span12, .span10, .span8, .span6, .span4, .span3, .span2, .span1
+.span12, .span10, .span8, .span7, .span6, .span5, .span4, .span3, .span2, .span1
 {
 	margin-left: 4%;
 	float: left;
@@ -58,7 +60,7 @@
 		margin-left: 0;
 	}
 	
-	.span12, .span10, .span8, .span6, .span4, .span3, .span2, .span1
+	.span12, .span10, .span8, .span7, .span6, .span5, .span4, .span3, .span2, .span1
 	{
 		width: 96%;
 		float: none;
