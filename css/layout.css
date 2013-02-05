@@ -62,7 +62,7 @@
 	
 	.span12, .span10, .span8, .span7, .span6, .span5, .span4, .span3, .span2, .span1
 	{
-		width: 96%;
+		width: 100%;
 		float: none;
 		margin-left: 0;
 	}
